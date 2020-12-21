@@ -67,6 +67,7 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
       KAFKA_CREATE_TOPICS: "input:2:1, output:2:1"
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_HEAP_OPTS: -Xmx512M -Xms512M
     ports:
       - 9094:9094
 volumes:
